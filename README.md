@@ -11,3 +11,5 @@ YMMV
 
 Let me know if things don't work etc
 mm16jdc at leeds dot ac dot uk
+
+If you're interested in seeing the end result of my segmentation model, you can view some results on my [university webpage](https://homepages.see.leeds.ac.uk/~mm16jdc/phd/lee_waves/).
