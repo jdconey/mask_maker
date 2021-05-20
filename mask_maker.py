@@ -26,8 +26,8 @@ def get_variables(fname):
 
     Returns
     -------
-    TYPE
-        DESCRIPTION.
+    list
+        list of strings containing the variables.
 
     """
     x = xarray.open_dataset(fname)
