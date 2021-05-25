@@ -1,7 +1,7 @@
 # mask_maker
 Binary mask drawing tool for Met Office UKV netCDF model output
 
-Does what it says on the tin. Rough around the edges. A helper tool to create binary masks for segmentation tasks using Met Office UKV data (I used vertical velocity data, for example).
+Does what it says on the tin. Rough around the edges. A helper tool to create binary masks for segmentation tasks using Met Office UKV data (I used vertical velocity data to attempt to identify regions containing [lee waves](https://www.metoffice.gov.uk/weather/learn-about/weather/types-of-weather/wind/lee-waves), for example).
 
 Requires interactive matplotlib to work properly, hence the jupyter notebook.
 All the important functions are in the `mask_maker.py` script which are imported into the notebook to save mess. 
