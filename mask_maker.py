@@ -175,11 +175,11 @@ def combine_data_and_mask(data_array,mask,xcoord='projection_x_coordinate',ycoor
     dataset = xarray.Dataset({'data': data_array, 'mask': ((ycoord, xcoord), mask)})
     return dataset
 
-def plot_dataset(dataset,proj,robust=True):
+def plot_dataset(dataset,proj,robust=False):
     fig = plt.figure(figsize=(10.5,9))
     ax1 = fig.add_subplot(111,projection=proj)
-    dataset['data'].plot.pcolormesh(cmap='Greys',robust=robust,rasterized=True)
-    dataset['mask'].plot.pcolormesh(cmap='Oranges',alpha=0.1,add_colorbar=False,rasterized=True)
+    dataset['data'].plot.pcolormesh(cmap='seismic',robust=robust,rasterized=True,)#vmin=-4,vmax=4)
+    dataset['mask'].plot.contour(cmap='Oranges',alpha=1)
     ax1.coastlines(resolution='10m',alpha=1,zorder=2)
     plt.show()
 
